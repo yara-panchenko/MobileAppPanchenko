@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileAppPanchenko.Page1">
+    <ContentPage.Content>
+        <StackLayout Orientation="Horizontal" >
+            <Label x:Name="lbl"
+                   Text="Nupp!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="btn" 
+                    Text="Vajuta siia" 
+                    BackgroundColor="#EE7E7E"
+                    BorderColor="CadetBlue"
+                    BorderWidth="7"
+                    FontSize="Large"
+                    Clicked="btn_Clicked"
+                    VerticalOptions="End" 
+                    HorizontalOptions="Start">
+
+            </Button>
+            <Button x:Name="btn2"
+                    Text="Null" 
+                    BackgroundColor="#EE7E7E"
+                    BorderColor="CadetBlue"
+                    BorderWidth="7"
+                    FontSize="Large"
+                    Clicked="btn2_Clicked"
+                    VerticalOptions="End"
+                    HorizontalOptions="EndAndExpand">
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
