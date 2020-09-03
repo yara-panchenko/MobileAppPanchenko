@@ -18,33 +18,66 @@ namespace MobileAppPanchenko
             Label punane = new Label()
             {
                 Text = "Punane",
-                TextColor = Color.Red,
+                TextColor = Color.White,
                 FontSize = 30,
                 FontAttributes = FontAttributes.Bold
+            };
+            Frame pun = new Frame()
+            {
+                BackgroundColor = Color.Red,
+                Content = punane,
+                CornerRadius = 60,
+                Margin = new Thickness(80, 0, 80, 0),
+                VerticalOptions = VerticalOptions.CenterAndExpand,
+                HorizontalOptions = HorizontalOptions.CenterAndExpand,
             };
             Label kollane = new Label()
             {
                 Text = "Kollane",
-                TextColor = Color.Yellow,
+                TextColor = Color.White,
                 FontSize = 30,
-                FontAttributes = FontAttributes.Bold
+                FontAttributes = FontAttributes.Bold,
 
+            };
+            Frame kol = new Frame()
+            {
+                BackgroundColor = Color.Yellow,
+                Content = kollane,
+                CornerRadius = 60,
+                Margin = new Thickness(80, 0, 80, 0),
+                VerticalOptions = VerticalOptions.CenterAndExpand,
+                HorizontalOptions = HorizontalOptions.CenterAndExpand,
             };
             Label roheline = new Label()
             {
                 Text = "Roheline",
-                TextColor = Color.Green,
+                TextColor = Color.White,
                 FontSize = 30,
                 FontAttributes = FontAttributes.Bold
             };
+            Frame roh = new Frame()
+            {
+                BackgroundColor = Color.Green,
+                Content = roheline,
+                CornerRadius = 60,
+                Margin = new Thickness(80, 0, 80, 0),
+                VerticalOptions = VerticalOptions.CenterAndExpand,
+                HorizontalOptions = HorizontalOptins.CenterAndExpand,
+            };
+            Button btn=new Button()
+            {
+                Text = "Вкл",
+                VerticalOptions = "StartAndExpand"
+                HorizontalOptions = "StartAndExpand"
+            }
             StackLayout stackLayout = new StackLayout()
             {
                 Children =
                 {
-                    punane, kollane, roheline
+                    pun, kol, roh
                 }
             };
-            stackLayout.Orientation = StackOrientation.Horizontal;
+            //stackLayout.Orientation = StackOrientation.Horizontal;
             Content = stackLayout;
 
         }
