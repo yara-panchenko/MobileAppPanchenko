@@ -10,7 +10,7 @@ namespace MobileAppPanchenko
         {
             InitializeComponent();
 
-            MainPage = new Page1();
+            MainPage = new Valgusfoor2();
         }
 
         protected override void OnStart()
